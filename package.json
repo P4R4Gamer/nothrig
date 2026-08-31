@@ -1,0 +1,17 @@
+{
+  "name": "nothrig",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Nothrig — Streetwear / Oversize / Heavy Clothing. Statische Website mit Eleventy.",
+  "scripts": {
+    "start": "eleventy --serve",
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

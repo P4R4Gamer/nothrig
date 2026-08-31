@@ -1,0 +1,14 @@
+{# Wiederverwendbarer Seitenkopf.
+   Die einbindende Seite setzt im Front Matter:
+   intro:
+     eyebrow: "..."
+     title:   "..."
+     text:    "..."   (optional)
+#}
+<section class="page-intro">
+  <div class="wrap">
+    <p class="eyebrow">{{ intro.eyebrow }}</p>
+    <h1>{{ intro.title }}</h1>
+    {% if intro.text %}<p>{{ intro.text }}</p>{% endif %}
+  </div>
+</section>

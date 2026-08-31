@@ -1,0 +1,19 @@
+{# Ankündigungsleiste + Kopf mit Navigation #}
+<div class="announce">Drop 001 — jetzt live · Versandkostenfrei ab 80&nbsp;€</div>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a href="/" class="logo" aria-label="Nothrig — Startseite">Nothrig</a>
+
+    <nav class="nav" id="nav" hidden>
+      <a href="/"{% if navId == "home" %} aria-current="page"{% endif %}>Start</a>
+      <a href="/drops/"{% if navId == "drops" %} aria-current="page"{% endif %}>Drops</a>
+      <a href="/shop/"{% if navId == "shop" %} aria-current="page"{% endif %}>Shop</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menü</button>
+      <a class="cart-link" href="/cart/">Warenkorb (<span data-cart-count>0</span>)</a>
+    </div>
+  </div>
+</header>
